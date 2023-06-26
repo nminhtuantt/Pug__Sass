@@ -1,0 +1,35 @@
+header.header
+    .header__top
+      .container
+        img(srcset='./images/logo.png 2x' alt='heling')
+        - var menuItems = ['Home', 'Projects', 'Designers', 'Articles'];
+        ul.menu
+            each item in menuItems
+                li.menu__item
+                a.menu__link(href='#!') #{item}
+        a.header__contact.font-heading(href='#!') Contact
+        button.menu__toggle
+          span.line.line-first
+          span.line.line-second
+    img(srcset='./images/header-line.png 2x' alt='')
+    .container
+      .header__main
+        .header__content
+          h1.header__heading.font-heading
+            | We make
+            span
+              span.header__heading-child We 
+              | every room
+            span
+              span.header-heading-child We 
+              | a unique
+              |                                 shape
+          .header__info
+            img(srcset='./images/header-line2.png 2x')
+            p.header__text
+              | Lorem ipsum onsectetur adipiscing elit. Blandit mauris etiam
+              | faucibus laoreet tellus nam. Gravida solor aenean orci,
+              | facilisis senectus.
+        .header__images
+          img.header__img-large(srcset='./images/img1.png 2x' alt='')
+          img.header__img-small(srcset='./images/img2.png 2x' alt='')

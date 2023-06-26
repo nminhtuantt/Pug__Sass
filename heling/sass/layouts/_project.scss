@@ -1,0 +1,51 @@
+.project {
+    padding-top: 120px;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    &__item {
+      position: relative;
+      height: 712px;
+    }
+    &__image {
+      height: 100%;
+    }
+    &__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__info {
+      position: absolute;
+      bottom: 65px;
+      left: calc(10% - 15px);
+      color: white;
+    }
+    &__name {
+      font-size: 50px;
+      line-height: lineH(62, 50);
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    @include maxWidth (767.98px) {
+      padding-top: 60px;
+      &__header {
+        align-items: flex-end;
+        margin-bottom: 50px;
+      }
+      &__item {
+        height: 244px;
+      }
+      &__info {
+        left: 16px;
+        bottom: 16px;
+      }
+      &__name {
+        font-size: 32px;
+        line-height: lineH(40, 32);
+      }
+    }
+  }

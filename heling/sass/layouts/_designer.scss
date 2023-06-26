@@ -1,0 +1,41 @@
+.designer {
+    background-color: $primary-color;
+    padding-top: 160px;
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__content {
+      width: 100%;
+      max-width: 616px;
+      color: white;
+    }
+    &__heading {
+      margin-bottom: 30px;
+    }
+    &__desc {
+      margin-bottom: 25px;
+    }
+    &__link {
+      margin-top: 15px;
+      display: inline-block;
+    }
+    &__desc {
+      opacity: 0.7;
+    }
+    @include maxWidth (767.98px) {
+      padding-top: 120px;
+      &__main {
+        flex-direction: column;
+        gap: 70px 0;
+      }
+      &__heading,
+      &__desc {
+        margin-bottom: 20px;
+      }
+      &__link {
+        margin-top: 20px;
+      }
+    }
+  }

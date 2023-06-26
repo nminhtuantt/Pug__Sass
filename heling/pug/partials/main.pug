@@ -1,0 +1,52 @@
+main
+    section.about
+      .container
+        .about__header
+          h2.about__heading.g-heading.font-heading Our remember-able stories
+          p.g-text.about__desc
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit
+            | mauris etiam faucibus laoreet vestibulum pretium tellus nam.
+            | Gravida aenean orci, facilisis senectus.
+        .about__content
+          .about__left
+            img(srcset='./images/img3.png 2x' alt='')
+          .about__right
+            img(srcset='./images/img4.png 2x' alt='')
+            img(srcset='./images/line3.png 2x' alt='')
+            h3.font-heading.about__caption We don&rsquo;t renovate space, we transform them
+    img(srcset='./images/line4.png 2x' alt='')
+    section.project
+      .container
+        .project__header
+          h2.font-heading.g-heading.project__heading Our latest projects
+          a.project-all.g-link.font-heading(href='#!') All projects
+      .project__list
+        .project__item
+          .project__image
+            img(src='https://source.unsplash.com/random' alt='')
+          .project__info
+            h3.project__name Dining Room
+            a.project__link.g-link.font-heading(href='#') View Details
+    section.designer
+      .container
+        .designer__main
+          .designer__content
+            h2.g-heading.font-heading.designer__heading Our designers
+            p.g-text.designer__desc
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Blandit mauris etiam faucibus laoreet vestibulum
+            p.g-text.designer__desc
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Blandit mauris etiam faucibus laoreet vestibulum nam. Gravida
+              | aenean orci, facilisis senectus.
+            a.g-link.designer__link(href='#') See All Designers
+          .designer__image
+            img(srcset='./images/img5.png 2x' alt='')
+    section.blog
+      .container
+        .blog__header
+          h2.g-heading.font-heading.blog__heading Our latest articles
+          a.g-link.blog-view(href='#') Read All Articles
+        .blog__list
+          +blogItem('./images/img6.png 2x', 'Why your client needs interior design', '#', 'April 30, 2020')
+          +blogItem('./images/img6.png 2x', 'Why your client needs interior design', '#', 'April 30, 2020')

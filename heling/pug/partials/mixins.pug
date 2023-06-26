@@ -1,0 +1,13 @@
+mixin contactItem(dot, heading)
+  .footer__info
+    span.footer__infotext-dot= dot
+    h4.footer__info-item.font-heading= heading
+
+mixin blogItem(srcset, title, href, time)
+  .blog__item
+    .blog__image
+      img(srcset=srcset, alt='')
+    h3.blog__title.font-heading= title
+    .blog__meta
+      a.g-link.blog__link(href=href) Read More
+      time.blog__time= time
